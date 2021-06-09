@@ -9,7 +9,7 @@ import AVKit
 import Combine
 import UIKit
 
-protocol CustomPlayerControlsViewDelegate: class {
+protocol CustomPlayerControlsViewDelegate: AnyObject {
     func controlsViewDidRequestStartPictureInPicture(_ controlsView: CustomPlayerControlsView)
     func controlsViewDidRequestStopPictureInPicture(_ controlsView: CustomPlayerControlsView)
     func controlsViewDidRequestControlsDismissal(_ controlsView: CustomPlayerControlsView)
